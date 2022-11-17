@@ -1,0 +1,65 @@
+*,*::before, *::after {box-sizing: border-box;}
+
+:root{
+    --color-boton:#fff;
+    --color-backgroud:#1b1c23;
+    --color-glass:rgba(255,255,255, 0.1);
+    --color-shadow:rgba(0,0,0,0.1);
+}
+
+html,body{
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    background: var(--color-backgroud);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-boton);
+    font-family: 'Poppins', sans-serif;
+}
+/* Design - diseño */
+.container
+{
+    width: 100%;
+    height: 100vh;
+}
+img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 160px;
+    margin-left: 760px;
+    width: 12%;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding-left: 100px;
+}
+.button div
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 20%;
+    margin-right:100px ;
+    cursor: pointer;
+}
+.button div:hover
+{
+    filter: drop-shadow(1px 1px 8px rgb(255, 255, 255));
+}
+/* Button Colors */
+.button #blue{
+    background: #79d1d2;
+}
+.button #pink{
+    background: #ffb4bb;
+}
+.button #black{
+    background: #5a6770;
+}
